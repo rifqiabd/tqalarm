@@ -14,7 +14,7 @@ Setiap fase harus mempertahankan prinsip offline-first. Cloud merupakan enhancem
 
 | Fase | Fokus | Cakupan utama | Kriteria selesai |
 |---|---|---|---|
-| **v1 — MVP** | PWA browser-only | Jadwal bel, override tanggal, suara bel, audio unlock, timer Web Worker, leader election, JSON, import Excel, onboarding, i18n structure, dan noise generator dasar | Pengguna dapat menyiapkan jadwal dan bel berbunyi tanpa bantuan. |
+| **v1 — MVP** | PWA browser-only | Jadwal bel, override tanggal, suara bel, audio unlock, timer Web Worker, leader election, JSON, import Excel, onboarding, i18n structure | Pengguna dapat menyiapkan jadwal dan bel berbunyi tanpa bantuan. |
 | **v1.5** | Bridge desktop berbayar | Semua fitur v1, native audio, native timer, filesystem untuk MP3, SQLite sebagai source of truth, bel saat browser ditutup, auto-start, system tray, `/kiosk`, watchdog, lisensi offline, dan auto-update | Bel tetap berbunyi walau browser ditutup. |
 | **v2** | Kiosk, display, dan cloud opsional | Display board pada route `/display`, sinkronisasi dan backup melalui Supabase, serta branding per sekolah | Sinkronisasi multi-perangkat berjalan dan display board berfungsi. |
 | **v2.5** | Skala sekolah dan platform tambahan | Multi-bridge, site license, dan iOS melalui Capacitor | Satu sekolah dapat menggunakan multi-bridge. |
@@ -38,7 +38,6 @@ Menyediakan aplikasi bel sekolah yang dapat digunakan langsung di browser, beker
 9. Menyediakan export/import JSON dan import Excel menggunakan SheetJS.
 10. Menyediakan onboarding tiga langkah dengan tombol **Test Bell**.
 11. Menyediakan struktur i18n dengan Bahasa Indonesia lengkap dan Bahasa Inggris siap dikembangkan.
-12. Menyediakan noise generator white, pink, dan brown noise.
 
 ### Kriteria penerimaan
 
@@ -114,7 +113,7 @@ Item berikut tidak boleh dimasukkan ke scope v1:
 - Branding UI per sekolah.
 - Otomasi pembayaran penuh melalui Midtrans atau Xendit.
 - Backup otomatis ke Google Drive.
-- Fitur sosial atau berbagi preset noise.
+- Fitur sosial atau berbagi konfigurasi Focus Mode.
 
 Ide baru yang tidak tercantum pada Feature Map harus masuk ke `BACKLOG.md`, bukan langsung dimasukkan ke milestone.
 

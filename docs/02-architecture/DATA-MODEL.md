@@ -35,9 +35,9 @@ The bridge is the source of truth when it is connected.
 | overrides  | -------------------->| sounds  |
 +------------+   bellIds[]          +---------+
 
-+----------+       independent records       +---------+
-| settings |                                | presets |
-+----------+                                +---------+
++----------+
+| settings |
++----------+
 
 +--------+
 | logs   |
@@ -164,20 +164,6 @@ The data layer must preserve `displayMode` during export and import.
 | `createdAt` | string | Yes | Creation time | v1 |
 | `updatedAt` | string | Yes | Update time | v1 |
 
-### 7.2 `presets`
-
-| Field | Type | Required | Description | Stage |
-|---|---|---:|---|---|
-| `id` | string | Yes | Preset identifier | v1 |
-| `name` | string | Yes | Preset name | v1 |
-| `layers` | object[] | Yes | Noise layer configuration | v1 |
-| `volume` | number | Yes | Preset volume | v1 |
-| `isUserPreset` | boolean | Yes | User preset state | v1 |
-| `createdAt` | string | Yes | Creation time | v1 |
-| `updatedAt` | string | Yes | Update time | v1 |
-
-`layers` supports the basic white, pink, and brown noise generator.
-
 ## 8. Storage by Stage
 
 | Record | Browser v1 | Bridge v1.5 |
@@ -188,7 +174,6 @@ The data layer must preserve `displayMode` during export and import.
 | `sounds` | IndexedDB with `fileBlob` | SQLite metadata with filesystem `filePath` |
 | `settings` | IndexedDB | SQLite |
 | `logs` | IndexedDB | SQLite |
-| `presets` | IndexedDB | SQLite |
 
 The bridge may receive browser data through the authenticated API contract.
 The bridge must keep the bridge copy as the active source of truth when connected.

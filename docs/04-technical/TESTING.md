@@ -2,7 +2,7 @@
 
 ## Test scope
 
-Version 1 is browser-only, offline-first, and zero-backend. Its acceptance checks cover schedules, bells, browser audio, local storage, data transfer, onboarding, and the basic noise generator. Bridge behavior is not a v1 acceptance requirement; it is identified separately as a v1.5 boundary.
+Version 1 is browser-only, offline-first, and zero-backend. Its acceptance checks cover schedules, bells, browser audio, local storage, data transfer, and onboarding. Bridge behavior is not a v1 acceptance requirement; it is identified separately as a v1.5 boundary.
 
 Use Vitest for focused logic and data tests, Playwright for browser flows, and `svelte-check` for Svelte and TypeScript diagnostics. Do not add unapproved coverage thresholds, browser matrices, ports, or CI commands.
 
@@ -38,7 +38,7 @@ Use Vitest for focused logic and data tests, Playwright for browser flows, and `
 ### 4. Import and export
 
 - Export a supported configuration to JSON.
-- Import the exported JSON into the browser and confirm supported schedules, bells, overrides, sounds, settings, and presets are preserved as applicable.
+- Import the exported JSON into the browser and confirm supported schedules, bells, overrides, sounds, and settings are preserved as applicable.
 - Confirm a round trip does not silently lose supported data.
 - Import a supported Excel schedule through SheetJS and verify the resulting schedule and bell data.
 - Verify invalid or unsupported input is rejected or reported without corrupting existing local data.

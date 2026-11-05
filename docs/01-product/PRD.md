@@ -6,7 +6,7 @@
 
 ## 1. Ringkasan Produk
 
-TQAlarm adalah aplikasi bel sekolah otomatis berbasis **Progressive Web App (PWA)**. Aplikasi membantu operator sekolah mengatur jadwal bel, menjalankan bel harian, dan menangani pengecualian seperti ujian, libur, atau acara khusus. TQAlarm juga menyediakan noise generator dasar untuk fokus dan relaksasi.
+TQAlarm adalah aplikasi bel sekolah otomatis berbasis **Progressive Web App (PWA)**. Aplikasi membantu operator sekolah mengatur jadwal bel, menjalankan bel harian, dan menangani pengecualian seperti ujian, libur, atau acara khusus.
 
 Versi v1 berjalan sepenuhnya di browser, offline-first, dan tetap berguna tanpa backend. Pada tahap berikutnya, aplikasi dapat di-upgrade dengan **bridge desktop Tauri** berbayar untuk audio dan timer native, penyimpanan filesystem, serta keandalan saat browser ditutup.
 
@@ -30,8 +30,7 @@ Solusi v1 harus memberikan manfaat nyata tanpa memaksa sekolah membeli bridge. K
 |---|---|
 | **Operator sekolah / TU** | Menyiapkan jadwal, mengelola suara, menjalankan bel, dan membuat override. |
 | **Kepala sekolah** | Memantau penggunaan dan memahami opsi lisensi pada tahap berikutnya. |
-| **Guru** | Melihat jadwal dan menggunakan noise generator untuk fokus. |
-| **Individu** | Menggunakan noise generator untuk fokus atau relaksasi. |
+| **Guru** | Melihat jadwal dan menggunakan aplikasi untuk mendukung kegiatan mengajar. |
 
 ### Skenario utama
 
@@ -41,7 +40,6 @@ Solusi v1 harus memberikan manfaat nyata tanpa memaksa sekolah membeli bridge. K
 4. Operator mengaktifkan jadwal dan membiarkan aplikasi menjalankan bel.
 5. Untuk tanggal khusus, operator membuat override bertipe libur, ujian, acara, atau kustom.
 6. Operator mengimpor jadwal dari Excel atau memindahkan konfigurasi melalui JSON.
-7. Guru atau individu membuka noise generator dan memilih lapisan white, pink, atau brown noise.
 
 ## 4. Tujuan dan Indikator Keberhasilan
 
@@ -77,7 +75,6 @@ Solusi v1 harus memberikan manfaat nyata tanpa memaksa sekolah membeli bridge. K
 - Upload dan kustomisasi suara bel.
 - Audio unlock flow berupa banner dan resume `AudioContext`.
 - Default tone sebagai fallback apabila audio kustom bermasalah.
-- Noise generator dasar: white, pink, dan brown noise.
 
 ### Data dan kompatibilitas
 
@@ -104,7 +101,7 @@ Fitur berikut tidak boleh dimasukkan ke scope v1 dan tetap menjadi backlog atau 
 - Branding UI per sekolah.
 - Otomasi pembayaran melalui Midtrans atau Xendit.
 - Backup otomatis ke Google Drive.
-- Fitur sosial atau berbagi preset noise.
+- Fitur sosial atau berbagi konfigurasi Focus Mode.
 - Bridge desktop, native timer/audio, system tray, auto-start, kiosk mode, watchdog, validasi lisensi offline, dan auto-update — fitur-fitur ini termasuk **v1.5**.
 - Cloud sync, site license, multi-bridge, integrasi absensi QR, dan iOS — fitur-fitur ini termasuk **v2 atau lebih baru**.
 

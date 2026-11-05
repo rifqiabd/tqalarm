@@ -17,6 +17,7 @@ Item berikut sudah direncanakan untuk fase setelah v1. Jangan mengerjakannya seb
 | **Multi-bridge** | Direncanakan, **v2.5** | Mendukung penggunaan beberapa bridge dalam satu sekolah. Rancangan detail belum ditetapkan. |
 | **Site license** | Direncanakan, **v2.5** | Mendukung skala penggunaan sekolah. Harga site license tetap **TBD** dan tidak boleh diasumsikan. |
 | **iOS melalui Capacitor** | Direncanakan, **v2.5** | Platform tambahan setelah kebutuhan multi-bridge dan skala sekolah ditangani. |
+| **Focus Mode (White/Pink/Brown Noise)** | Direncanakan, **v2+** | Ditunda untuk guru yang butuh fokus di ruang TU. |
 | **Integrasi absensi QR** | Direncanakan, **v2+** | Tercantum sebagai fitur Tier 3. Fase rinci dan prioritas implementasinya belum ditetapkan. |
 
 ### Urutan fase yang menjadi acuan
@@ -37,7 +38,7 @@ Item berikut **tidak boleh masuk scope v1**. Jangan mengubahnya menjadi fitur v1
 | **Branding UI per sekolah** | Backlog implementasi; terkait branding per sekolah v2 | Branding per sekolah direncanakan pada v2, tetapi UI branding tidak boleh masuk v1. Nama, domain, dan branding resmi tetap **TBD**. |
 | **Otomasi pembayaran penuh** melalui Midtrans atau Xendit | Backlog; target belum ditetapkan | Pembayaran harus manual melalui WhatsApp terlebih dahulu. Sistem pembayaran tidak dibangun di v1. |
 | **Backup otomatis ke Google Drive** | Backlog; target belum ditetapkan | Jalur cloud yang direncanakan adalah sync/backup opsional melalui Supabase pada v2. Jangan menambah integrasi cloud lain ke v1. |
-| **Fitur sosial atau berbagi preset noise** | Backlog; target belum ditetapkan | Tidak termasuk scope produk yang telah direncanakan. Tunda untuk mencegah feature creep dan menjaga fokus pada noise generator dasar. |
+| **Fitur sosial atau berbagi konfigurasi Focus Mode** | Backlog; target belum ditetapkan | Tidak termasuk scope produk yang telah direncanakan. Tunda untuk mencegah feature creep dan menjaga fokus pada aplikasi bel sekolah. |
 
 ## 3. Batasan Backlog
 

@@ -15,7 +15,6 @@ The contract does not define automatic payment APIs.
 | JSON export and import | Required | v1 |
 | Excel import | Required | v1 |
 | Browser bell execution | Required | v1 |
-| Noise generator control | Required | v1 |
 | Localhost WebSocket | Required | v1.5 |
 | Token authentication | Required | v1.5 |
 | Bridge data operations | Required | v1.5 |
@@ -48,7 +47,6 @@ The PWA uses these IndexedDB stores:
 - `sounds`
 - `settings`
 - `logs`
-- `presets`
 
 The PWA uses the data model for each store.
 The PWA preserves `announcements`, `schoolLogo`, and `displayMode` in `settings`.
@@ -68,8 +66,7 @@ The PWA exports all supported records as one JSON document.
     "overrides": [],
     "sounds": [],
     "settings": {},
-    "logs": [],
-    "presets": []
+    "logs": []
   }
 }
 ```
@@ -108,17 +105,6 @@ The PWA uses the default tone when custom audio fails.
 The PWA exposes a Test Bell action during onboarding.
 The Test Bell action uses the selected sound when the sound is usable.
 The Test Bell action uses the default tone when the selected sound fails.
-
-### 4.6 Noise generator control
-
-The PWA supports these noise layers:
-
-- `white`
-- `pink`
-- `brown`
-
-The PWA stores user presets in the `presets` store.
-The PWA does not share presets with another user in v1.
 
 ## 5. Bridge v1.5 WebSocket Contract
 

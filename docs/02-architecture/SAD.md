@@ -97,7 +97,7 @@ They are not separate applications.
 
 ### 5.2 Browser data layer
 
-The browser data layer stores schedules, bells, overrides, sounds, settings, logs, and presets in IndexedDB.
+The browser data layer stores schedules, bells, overrides, sounds, settings, and logs in IndexedDB.
 The data layer supports JSON export and import.
 The data layer supports Excel import through SheetJS.
 The data layer keeps future fields in the settings record.
@@ -107,7 +107,6 @@ The data layer keeps future fields in the settings record.
 The browser audio layer uses the Web Audio API.
 The user must unlock audio through the onboarding or audio banner flow.
 The audio layer plays a default tone when custom audio fails.
-The audio layer supports the basic white, pink, and brown noise generator.
 
 ### 5.4 Browser scheduler
 
@@ -185,4 +184,4 @@ This architecture does not include the v1 display board user interface.
 This architecture does not include academic calendar integration.
 This architecture does not include complete English localization.
 This architecture does not include Google Drive backup.
-This architecture does not include social noise preset sharing.
+This architecture does not include social Focus Mode sharing.

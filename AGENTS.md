@@ -11,7 +11,7 @@
 
 ## 1. Ringkasan Produk
 
-**TQAlarm** adalah aplikasi bel sekolah otomatis berbasis **PWA (Progressive Web App)** yang berjalan sepenuhnya di browser sebagai versi gratis, dan dapat di-upgrade menjadi **aplikasi desktop berbayar** (bridge) untuk keandalan tingkat sistem. Dilengkapi *noise generator* untuk relaksasi (ala mynoise.net). Target utama: **sekolah Indonesia**.
+**TQAlarm** adalah aplikasi bel sekolah otomatis berbasis **PWA (Progressive Web App)** yang berjalan sepenuhnya di browser sebagai versi gratis, dan dapat di-upgrade menjadi **aplikasi desktop berbayar** (bridge) untuk keandalan tingkat sistem. Target utama: **sekolah Indonesia**.
 
 **Diferensiasi:**
 - Versi gratis benar-benar berguna (bukan *crippled*).
@@ -26,8 +26,7 @@
 |---|---|
 | **Operator sekolah / TU** | Setup jadwal bel, jalankan bel harian, override untuk ujian/libur |
 | **Kepala sekolah** | Monitor, site license, branding |
-| **Guru** | Lihat jadwal, gunakan noise generator saat fokus |
-| **Individu** | Noise generator untuk relaksasi/fokus |
+| **Guru** | Lihat jadwal dan gunakan aplikasi untuk mendukung kegiatan mengajar |
 
 ---
 
@@ -57,7 +56,6 @@
 - Import dari Excel (SheetJS)
 - Onboarding 3 langkah + tombol "Test Bell"
 - i18n structure (ID lengkap, EN siap)
-- Noise generator dasar (white/pink/brown)
 
 ### Tier 2 — Berbayar (Bridge Desktop) — **Scope v1.5**
 - Semua fitur Tier 1
@@ -80,6 +78,7 @@
 - Site license
 - Integrasi absensi QR
 - iOS (Capacitor)
+- Focus Mode (Noise Generator) untuk guru yang membutuhkan fokus di ruang TU
 
 ### 🚫 Backlog — JANGAN dimasukkan ke scope v1
 - Display board UI (jam besar, running text, slideshow)
@@ -88,7 +87,8 @@
 - Branding UI per sekolah
 - Otomasi pembayaran penuh (Midtrans/Xendit)
 - Google Drive backup otomatis
-- Fitur sosial / share preset noise
+- Fitur sosial / berbagi konfigurasi Focus Mode
+- Focus Mode (Noise Generator) untuk guru yang membutuhkan fokus di ruang TU
 
 ---
 
@@ -97,7 +97,7 @@
 ```
 ┌──────────────────────────────────────────────┐
 │ BROWSER (PWA) — Dashboard / Remote Control   │
-│ · UI konfigurasi jadwal, upload MP3, preset  │
+│ · UI konfigurasi jadwal dan upload MP3       │
 │ · IndexedDB (mode gratis, fallback)          │
 │ · Web Audio API (perlu audio unlock)         │
 │ · Web Worker timer (perlu leader election)   │
@@ -140,7 +140,6 @@
 | `sounds` | id, name, source (builtin\|user), fileBlob/filePath, durationSec |
 | `settings` | schoolName, schoolLogo, themeColor, locale, displayMode, announcements[], audioUnlocked, bridgeConnected, bridgeToken |
 | `logs` | id, timestamp, bellId, status, errorMessage |
-| `presets` | id, name, layers[], volume, isUserPreset |
 
 **Catatan:** Field `announcements`, `schoolLogo`, `displayMode` disiapkan untuk v2 — jangan hapus.
 

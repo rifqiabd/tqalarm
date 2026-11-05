@@ -47,7 +47,7 @@ Kriteria kuantitatif, ambang kelulusan, dan format skor belum ditetapkan dalam d
 
 ## Pemisahan v1 dan feedback v1.5
 
-**Temuan v1** adalah masalah atau keberhasilan pada PWA browser-only: onboarding, audio unlock, Web Worker timer, leader election, IndexedDB, jadwal, override, import/export, penggunaan offline, dan noise generator dasar. Temuan ini menjadi dasar keputusan kesiapan v1.
+**Temuan v1** adalah masalah atau keberhasilan pada PWA browser-only: onboarding, audio unlock, Web Worker timer, leader election, IndexedDB, jadwal, override, import/export, dan penggunaan offline. Temuan ini menjadi dasar keputusan kesiapan v1.
 
 **Feedback v1.5** hanya dicatat sebagai masukan terpisah tentang bridge desktop dan keandalan tingkat sistem, termasuk native audio, native timer, SQLite sebagai source of truth, filesystem MP3, operasi saat browser ditutup, auto-start, system tray, `/kiosk`, watchdog, validasi lisensi offline, dan auto-update. Feedback ini tidak menjadi acceptance criteria v1 dan tidak boleh digunakan untuk menambahkan fitur v1.
 

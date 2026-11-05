@@ -4,7 +4,7 @@
 
 ## Prinsip penawaran
 
-TQAlarm dimulai dari versi gratis yang benar-benar berguna. Versi gratis adalah PWA browser-only, offline-first, dan tidak memerlukan backend. Fitur inti jadwal, audio, override, import/export, onboarding, dan noise generator dasar tidak boleh dibuat sengaja terbatas hanya untuk mendorong pembelian.
+TQAlarm dimulai dari versi gratis yang benar-benar berguna. Versi gratis adalah PWA browser-only, offline-first, dan tidak memerlukan backend. Fitur inti jadwal, audio, override, import/export, dan onboarding tidak boleh dibuat sengaja terbatas hanya untuk mendorong pembelian.
 
 Pembeda versi berbayar adalah keandalan operasional melalui **bridge**, bukan penghapusan fitur dasar dari versi gratis. Bridge direncanakan untuk tahap v1.5 dan mencakup native audio, native timer, penyimpanan lokal, serta operasi ketika browser ditutup.
 

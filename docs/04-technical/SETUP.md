@@ -35,7 +35,7 @@ When a bridge is connected in v1.5, it is the source of truth. When it is unavai
 
 ## Storage model
 
-The browser data model is represented in IndexedDB. The bridge data model is represented in SQLite, with MP3 files in the local filesystem. The core entities include schedules, bells, overrides, sounds, settings, logs, and presets. Preserve the future fields `announcements`, `schoolLogo`, and `displayMode` even when their UI is not available.
+The browser data model is represented in IndexedDB. The bridge data model is represented in SQLite, with MP3 files in the local filesystem. The core entities include schedules, bells, overrides, sounds, settings, and logs. Preserve the future fields `announcements`, `schoolLogo`, and `displayMode` even when their UI is not available.
 
 The v1 application must remain client-side first, offline-first, and zero-backend. Supabase is optional future sync/backup infrastructure; it is not a v1 setup dependency.
 

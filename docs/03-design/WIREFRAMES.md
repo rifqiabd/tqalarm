@@ -23,11 +23,10 @@
 | [Import Excel] [Import JSON] [Export JSON]                     |
 | [Test Bell]                                                    |
 +----------------------------------------------------------------+
-| Noise generator: [White] [Pink] [Brown]                        |
 +----------------------------------------------------------------+
 ```
 
-Dashboard menampilkan status audio, sumber penyimpanan, status bridge bila relevan, jadwal, override tanggal, tindakan import/export, **Test Bell**, dan noise generator dasar. Tidak ada jam besar, running text, atau slideshow display board pada v1.
+Dashboard menampilkan status audio, sumber penyimpanan, status bridge bila relevan, jadwal, override tanggal, tindakan import/export, **Test Bell**. Tidak ada jam besar, running text, atau slideshow display board pada v1.
 
 ## 2. Onboarding — route `/onboarding`
 
