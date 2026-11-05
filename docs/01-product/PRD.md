@@ -134,7 +134,7 @@ Fitur berikut tidak boleh dimasukkan ke scope v1 dan tetap menjadi backlog atau 
 - v1 harus zero backend.
 - Pembayaran manual melalui WhatsApp terlebih dahulu; sistem pembayaran tidak dibangun di v1.
 - Data inti disiapkan agar dapat direpresentasikan di IndexedDB browser dan SQLite bridge.
-- Lisensi repo, harga Pro, harga site license, domain, serta nama domain dan branding resmi masih **TBD** dan harus ditanyakan sebelum diisi.
+- Lisensi repo, harga Pro, harga site license, domain, serta branding resmi masih **TBD** dan harus ditanyakan sebelum diisi.
 
 ## 10. Roadmap Tingkat Tinggi
 
